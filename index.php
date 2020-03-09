@@ -1,10 +1,4 @@
 <?php
-/********************************
-Simple PHP File Manager
-Copyright John Campbell (jcampbell1)
-
-Liscense: MIT
-********************************/
 
 //Disable error report for undefined superglobals
 error_reporting( error_reporting() & ~E_NOTICE );
@@ -17,7 +11,7 @@ $allow_direct_link = true; // Set to false to only allow downloads and not direc
 $allow_show_folders = true; // Set to false to hide all subdirectories
 $allow_rename_folder = true;
 
-$disallowed_extensions = ['php'];  // must be an array. Extensions disallowed to be uploaded
+$disallowed_extensions = ['php'];  // Extensions disallowed to be uploaded
 $hidden_extensions = ['php']; // must be an array of lowercase file extensions. Extensions hidden in directory index
 
 $PASSWORD = '';  // Set the password, to access the file manager... (optional)
